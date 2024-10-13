@@ -164,9 +164,9 @@
 .main-content {
   display: grid;
   grid-template-columns: 576px 1fr 426px;
+  padding-bottom: 32px;
   border-bottom: 1px solid var(--black-25);
   column-gap: 24px;
-  padding-bottom: 32px;
 }
 
 .first-post .post-title {
@@ -215,9 +215,6 @@
   line-height: 1.33;
 }
 
-.third-post {
-}
-
 .third-post > .post-title {
   margin-bottom: 8px;
   color: var(--black);
@@ -228,39 +225,93 @@
 }
 
 .second-content {
+  display: grid;
+  grid-template-areas: 'lp lp rp rp rp rp';
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--black-25);
 }
 
 .left-part {
+  display: grid;
+  grid-area: lp;
+  grid-template-columns: repeat(2, 288px);
+  gap: 12px;
+  margin-right: 12px;
 }
 
 .left-part-post {
+  border-right: 1px solid var(--black-25);
+  padding-right: 12px;
 }
 
 .left-part-post-title {
+  margin-bottom: 8px;
+  color: var(--black);
+  font-weight: 700;
+  font-size: 36px;
+  font-family: var(--main-font);
+  line-height: 1.22;
 }
 
 .left-part-post-author {
+  margin-bottom: 24px;
+  color: var(--black-50);
+  font-weight: 400;
+  font-size: 12px;
+  font-family: var(--main-font);
+  line-height: 1.33;
 }
 
 .left-part-post-text {
+  color: var(--black);
+  font-weight: 400;
+  font-size: 14px;
+  font-family: var(--main-font);
+  line-height: 1.29;
 }
 
 .right-part-wrapper {
+  display: grid;
+  grid-area: rp;
+  grid-template-areas:
+    't t t t'
+    'a . . .'
+    'p p p p';
 }
 
 .right-part-post-title {
+  grid-area: t;
+  color: var(--black);
+  font-weight: 700;
+  font-size: 48px;
+  font-family: var(--main-font);
+  line-height: 1.17;
+  margin-bottom: 8px;
 }
 
 .right-part-post-author {
+  grid-area: a;
+  color: var(--black-50);
+  font-weight: 400;
+  font-size: 12px;
+  font-family: var(--main-font);
+  line-height: 1.33;
+  margin-bottom: 24px;
 }
 
 .right-part {
-}
-
-.right-part-post {
+  grid-area: p;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 24px;
 }
 
 .right-part-post-text {
+  color: var(--black);
+  font-weight: 400;
+  font-size: 14px;
+  font-family: var(--main-font);
+  line-height: 1.29;
 }
 
 /* .logo {
