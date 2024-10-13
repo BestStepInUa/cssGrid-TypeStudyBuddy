@@ -1,5 +1,5 @@
-@import "./fonts.css";
-@import "./styleguide.css";
+@import './fonts.css';
+@import './styleguide.css';
 
 .container {
   max-width: 1920px;
@@ -13,39 +13,39 @@
 
 .header-container {
   display: grid;
-  justify-content: center;  
+  justify-content: center;
   column-gap: 9px;
 }
 
 .page-title {
-color: var(--white);
-font-weight: 700;
-font-size: 64px;
-font-family: var(--main-font);
-line-height: 1.12;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 64px;
+  font-family: var(--main-font);
+  line-height: 1.12;
 }
 
 .page-title-desc {
-color: var(--white);
-font-weight: 400;
-font-size: 24px;
-font-family: var(--main-font);
-line-height: 1.67;
+  color: var(--white);
+  font-weight: 400;
+  font-size: 24px;
+  font-family: var(--main-font);
+  line-height: 1.67;
 }
 
 .page-title-desc span {
-  background-color: #00FFA3;
+  background-color: #00ffa3;
   color: var(--black);
 }
 
 .slide {
   height: 1080px;
-  padding: 0 128px;  
+  padding: 0 128px;
 }
 
-.slide-1 {  
-  display: grid; 
-  gap: 16px;  
+.slide-1 {
+  display: grid;
+  gap: 16px;
   align-content: center;
 }
 
@@ -62,32 +62,33 @@ line-height: 1.67;
   font-weight: 700;
   font-size: 64px;
   font-family: var(--main-font);
-  line-height: 112%
+  line-height: 1.12;
 }
 
 .slide-2 {
   display: grid;
+  grid-template-areas:
+    'd d'
+    'b .';
+  grid-template-columns: 720px 1fr;
   row-gap: 128px;
   align-content: center;
-  grid-template-columns: 720px 1fr;
-  grid-template-areas: 
-  "d d"
-  "b b";  
 }
 
 .slide-2 .decsription {
   display: grid;
-  gap: 24px;
   grid-area: d;
+  gap: 24px;
 }
 
 .slide-2 .background {
   display: grid;
+  grid-area: b;
   gap: 24px;
-  grid-area: b;  
 }
 
-.slide-2 .decsription .label, .slide-2 .background .label {
+.slide-2 .decsription .label,
+.slide-2 .background .label {
   color: var(--white-50);
   font-weight: 700;
   font-size: 24px;
@@ -102,15 +103,164 @@ line-height: 1.67;
   font-weight: 700;
   font-size: 80px;
   font-family: var(--main-font);
-  line-height: 105%;
+  line-height: 1.05;
 }
 
 .slide-2 .background .title {
-  font-family: var(--main-font);
+  color: var(--white);
   font-weight: 700;
   font-size: 36px;
-  line-height: 122%;
-  color: var(--white);
+  font-family: var(--main-font);
+  line-height: 1.22;
+}
+
+.slide-3 {
+  padding: 0;
+}
+
+.newspaper {
+  display: grid;
+  gap: 32px;
+  padding: 72px 72px 56px;
+  background-color: var(--white);
+}
+
+.newspaper-title-wrapper {
+  display: grid;
+  gap: 8px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--black-25);
+}
+
+.newspaper-name {
+  color: var(--black);
+  font-weight: 400;
+  font-size: 72px;
+  font-family: var(--nova-font);
+  line-height: 1;
+  text-align: center;
+}
+
+.newspaper-date {
+  color: var(--black-50);
+  font-weight: 400;
+  font-size: 14px;
+  font-family: var(--main-font);
+  line-height: 1.29;
+  text-align: center;
+}
+
+.main-title {
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--black-25);
+  color: var(--black);
+  font-weight: 700;
+  font-size: 80px;
+  font-family: var(--main-font);
+  line-height: 1.05;
+  text-align: center;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 576px 1fr 426px;
+  border-bottom: 1px solid var(--black-25);
+  column-gap: 24px;
+  padding-bottom: 32px;
+}
+
+.first-post .post-title {
+  margin-bottom: 4px;
+  color: var(--black);
+  font-weight: 700;
+  font-size: 64px;
+  font-family: var(--main-font);
+  line-height: 1.12;
+}
+
+.first-post .post-author,
+.third-post .post-author {
+  margin-bottom: 24px;
+  color: var(--black-50);
+  font-weight: 400;
+  font-size: 12px;
+  font-family: var(--main-font);
+  line-height: 1.33;
+}
+
+.first-post .post-text,
+.third-post .post-text {
+  color: var(--black);
+  font-weight: 400;
+  font-size: 18px;
+  font-family: var(--main-font);
+  line-height: 1.33;
+}
+
+.second-post {
+  display: grid;
+  grid-template-rows: 95% 1fr;
+  gap: 12px;
+}
+
+.second-post .post-rectangle {
+  background-color: var(--black-25);
+}
+
+.second-post .post-text {
+  color: var(--black);
+  font-weight: 400;
+  font-size: 12px;
+  font-family: var(--main-font);
+  line-height: 1.33;
+}
+
+.third-post {
+}
+
+.third-post > .post-title {
+  margin-bottom: 8px;
+  color: var(--black);
+  font-weight: 700;
+  font-size: 48px;
+  font-family: var(--main-font);
+  line-height: 1.17;
+}
+
+.second-content {
+}
+
+.left-part {
+}
+
+.left-part-post {
+}
+
+.left-part-post-title {
+}
+
+.left-part-post-author {
+}
+
+.left-part-post-text {
+}
+
+.right-part-wrapper {
+}
+
+.right-part-post-title {
+}
+
+.right-part-post-author {
+}
+
+.right-part {
+}
+
+.right-part-post {
+}
+
+.right-part-post-text {
 }
 
 /* .logo {

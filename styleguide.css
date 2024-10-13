@@ -2,16 +2,16 @@
   --white: #fff;
   --black: #000;
   --black-75: rgba(0, 0, 0, 0.75);
-	--black-50: rgba(0, 0, 0, 0.5);
-	--black-25: rgba(0, 0, 0, 0.25);
+  --black-50: rgba(0, 0, 0, 0.5);
+  --black-25: rgba(0, 0, 0, 0.25);
   --white-75: rgba(255, 255, 255, 0.75);
-	--white-50: rgba(255, 255, 255, 0.5);
-	--white-25: rgba(255, 255, 255, 0.25);
-  --main-font: "Fira Sans", sans-serif;
-  --second-font: "Fira Mono", sans-serif;
-  --roboto-font: "Roboto Mono", sans-serif;
-  --helvetica-font: "Helvetica Neue", sans-serif;
-  --nova-font: "Nova Cut", sans-serif;
+  --white-50: rgba(255, 255, 255, 0.5);
+  --white-25: rgba(255, 255, 255, 0.25);
+  --main-font: 'Fira Sans', sans-serif;
+  --second-font: 'Fira Mono', sans-serif;
+  --roboto-font: 'Roboto Mono', sans-serif;
+  --helvetica-font: 'Helvetica Neue', sans-serif;
+  --nova-font: 'Nova Cut', sans-serif;
 }
 
 body {
