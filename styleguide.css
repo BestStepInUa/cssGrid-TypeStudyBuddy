@@ -1,0 +1,63 @@
+:root {
+  --white: #fff;
+  --black: #000;
+  --black-75: rgba(0, 0, 0, 0.75);
+	--black-50: rgba(0, 0, 0, 0.5);
+	--black-25: rgba(0, 0, 0, 0.25);
+  --white-75: rgba(255, 255, 255, 0.75);
+	--white-50: rgba(255, 255, 255, 0.5);
+	--white-25: rgba(255, 255, 255, 0.25);
+  --main-font: "Fira Sans", sans-serif;
+  --second-font: "Fira Mono", sans-serif;
+  --roboto-font: "Roboto Mono", sans-serif;
+  --helvetica-font: "Helvetica Neue", sans-serif;
+  --nova-font: "Nova Cut", sans-serif;
+}
+
+body {
+  background-color: var(--black);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* .title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: 0.5px;
+}
+
+.sub-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+} */
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* @media (min-width: 768px) {
+  .sub-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+  }
+} */
